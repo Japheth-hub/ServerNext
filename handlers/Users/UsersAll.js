@@ -1,6 +1,6 @@
-const {getUsers} = require('../../controllers')
+const { getUsers } = require('../../controllers')
 
-module.exports = async function UsersAll(req, res){
+module.exports = async function UsersAll(req, res) {
     try {
         const data = await getUsers()
         res.status(200).json(data)
